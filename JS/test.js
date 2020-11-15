@@ -16,5 +16,3 @@
 // }
 // switcher("lkdsgfkadflk");
 //=======================================\\
-
-console.log('object');
