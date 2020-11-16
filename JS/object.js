@@ -45,17 +45,17 @@ const products = [
   // 1. Создайте функцию getSaleProducts(), которая 
   //   вернет новый массив со свойством sale равным true.
   
-  function getSaleProducts (array, prop) {
-        const arr = [];
-        for (const item of array) {
-            if (item[prop]){
-                arr.push(item);
-            }
+//   function getSaleProducts (array, prop) {
+//         const arr = [];
+//         for (const item of array) {
+//             if (item[prop]){
+//                 arr.push(item);
+//             }
             
-        }
-        return arr;
-  }
-  console.log(getSaleProducts(products, 'sale'));
+//         }
+//         return arr;
+//   }
+//   console.log(getSaleProducts(products, 'sale'));
 
 
 // function getSaleProducts (array, prop) {
@@ -82,6 +82,18 @@ const products = [
 // }
 // console.log(getSaleProducts(products, 'quantity'));
 
+//===============================================================\\
+
 // 2. Создайте функцию getProductsName(), которая вернет новый массив 
 // со всеми названиями продуктов на русском языке.
 
+function getProductsName(array, ) {
+    const arr = [];
+    for (const item of array){
+        // console.log(item);
+        arr.push(item.value);
+    }
+
+    return arr;
+}
+console.log(getProductsName(products));
