@@ -196,3 +196,21 @@ const products = [
 // 7. Создайте функцию findProductByName(), 
 // которая будет возвращать объект из массива products в 
 // зависимости от передаваемого значения name или value.
+
+const  findProductByName = (array, prop) => {
+    for (const item of array) {
+        if (item.name  === prop || item.value === prop) {
+            return item;
+        }
+    }
+}
+
+const result1 = findProductByName(products, "juice");
+const result2 = findProductByName(products, "Морс");
+console.log(result1, result2);
+
+//================================================================\\
+
+// 7. Создайте функцию editProduct(), которая будет изменять объект products. 
+// В качестве аргументов, в функцию будут передаваться id, 
+// а также ключ и его значение, которое нужно перезаписать.
