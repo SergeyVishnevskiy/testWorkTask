@@ -70,9 +70,8 @@ const findBestEmployee = function(employees) {
     for (let key in employees) {
         if (employees[key] === valuesMax)
         return key;
-    }
+    };
     return '';
-    
   };
   
  
