@@ -166,3 +166,33 @@ const products = [
 // 6. Создайте функцию createProduct(), 
 // которая будет добавлять новый продукт в исходный массив products. 
 // Товар передается в функцию в виде объекта
+
+// function createProduct(array, newObject) {
+//     array.push(newObject)
+// }
+
+// const coffee = {
+//     id: "6",
+//     name: "coffe",
+//     value: "Кофе",
+//     price: 100,
+//     sale: false,
+//     quantity: 50,}
+
+// const tea = {
+//     id: "7",
+//     name: "tea",
+//     value: "Чай",
+//     price: 20,
+//     sale: false,
+//     quantity: 100,}
+// createProduct(products, coffee);
+// createProduct(products, tea);
+
+// console.table(products);
+
+//================================================================\\
+
+// 7. Создайте функцию findProductByName(), 
+// которая будет возвращать объект из массива products в 
+// зависимости от передаваемого значения name или value.
