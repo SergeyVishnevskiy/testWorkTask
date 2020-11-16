@@ -87,13 +87,32 @@ const products = [
 // 2. Создайте функцию getProductsName(), которая вернет новый массив 
 // со всеми названиями продуктов на русском языке.
 
-function getProductsName(array, ) {
-    const arr = [];
-    for (const item of array){
-        // console.log(item);
-        arr.push(item.value);
-    }
+// function getProductsName(array, ) {
+//     const arr = [];
+//     for (const item of array){
+//         // console.log(item);
+//         arr.push(item.value);
+//     }
 
-    return arr;
-}
-console.log(getProductsName(products));
+//     return arr;
+// }
+// console.log(getProductsName(products));
+//===============================================================\\
+
+// 3. Создайте функцию getTotalQuantity(), 
+// которая вернет общую сумму всех товаров на складе (свойство quantity).
+
+// function getTotalQuantity (array) {
+//     let sum = 0;
+//     for (const item of array) {
+//         sum += item.quantity;
+//         // console.log('item :>> ', item);
+//     }
+//     return sum
+// }
+// const result = getTotalQuantity(products);
+// console.log(result);
+//===============================================================\\
+
+// 4. Создайте функцию getProductById(), 
+// которая будет возвращать продукт по id.
