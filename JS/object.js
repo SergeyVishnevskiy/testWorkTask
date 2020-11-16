@@ -51,7 +51,6 @@ const products = [
 //             if (item[prop]){
 //                 arr.push(item);
 //             }
-            
 //         }
 //         return arr;
 //   }
@@ -102,6 +101,18 @@ const products = [
 // 3. Создайте функцию getTotalQuantity(), 
 // которая вернет общую сумму всех товаров на складе (свойство quantity).
 
+// function getSaleProducts (array, prop) {
+//     const arr = [];
+//     for (const item of array) {
+//         if (item[prop]){
+//             arr.push(item);
+//         }
+//     }
+//     return arr;
+// }
+// console.log(getSaleProducts(products, 'sale'));
+
+
 // function getTotalQuantity (array) {
 //     let sum = 0;
 //     for (const item of array) {
@@ -110,8 +121,9 @@ const products = [
 //     }
 //     return sum
 // }
-// const result = getTotalQuantity(products);
+// const result = getTotalQuantity(getSaleProducts(products, 'sale'));
 // console.log(result);
+
 //===============================================================\\
 
 // 4. Создайте функцию getProductById(), 
