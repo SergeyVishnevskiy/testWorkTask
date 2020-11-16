@@ -114,12 +114,12 @@ const products = [
 
 
 // function getTotalQuantity (array) {
-//     let sum = 0;
+//     let total = 0;
 //     for (const item of array) {
-//         sum += item.quantity;
+//         total += item.quantity;
 //         // console.log('item :>> ', item);
 //     }
-//     return sum
+//     return total
 // }
 // const result = getTotalQuantity(getSaleProducts(products, 'sale'));
 // console.log(result);
@@ -128,3 +128,41 @@ const products = [
 
 // 4. Создайте функцию getProductById(), 
 // которая будет возвращать продукт по id.
+
+// function getProductById(array, id) {
+    
+//     for (const item of array) {
+//         // console.log(item);
+//        if (item.id === id) {
+//             return item;
+//        }
+//     }
+// }
+
+// // getProductById(products, 3);
+// const result = getProductById(products, '3');
+// console.log(result);
+
+//===============================================================\\
+
+// 5. Создайте функцию deleteProductById(), 
+// которая будет удялять из исходного массива products товар по id.
+
+// const deleteProductById = (array, prop, value) => {
+//     for ( const item of array){
+//         // console.log(item);
+//         if (item[prop] === value) {
+//             // console.log(item);
+//             array.splice(array.indexOf(item), 1);
+//         }
+//     }
+//     return array
+// }
+// const result = deleteProductById (products, 'id', '4');
+// console.log(result);
+
+//================================================================\\
+
+// 6. Создайте функцию createProduct(), 
+// которая будет добавлять новый продукт в исходный массив products. 
+// Товар передается в функцию в виде объекта
