@@ -104,6 +104,65 @@
 
 // 3. Реализуйте счетчик вызова функции, работающий на замыканиях. 
 
+// const addOne = function (number = 0) {
+//     // let number = 0;
+//     return function (step=1) {
+//         return (number += step);
+//     };
+// };
+// const counter = addOne();
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
 
+// const oneMoreCounter = addOne(50);
+// console.log(oneMoreCounter());
+// console.log(oneMoreCounter());
+// console.log(oneMoreCounter());
+//=================================================================\\
 
+// 4. Пусть функция в замыкании хранит число 10. Сделайте так, 
+// чтобы каждый вызов функции уменьшал это число на 1 и выводил на экран уменьшенное число.
+
+// const addOne = function () {
+//     let number = 10;
+//     return function () {
+//         return (number -= 1);
+//     };
+// };
+// const counter = addOne();
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+
+//=================================================================\\
+// 5. Модифицируйте предыдущую задачу так, чтобы отсчет доходил до 0, 
+// а затем каждый последующий вызов функции выводил на экран сообщение о том, что отсчет окончен.
+
+// function createCouter (number = 10) {
+//     return function (step = -1) {
+//         // return !number ? 'отсчет окончен' : number += step;  
+//         // return number === 0 ? 'отсчет окончен' : number += step; 
+//         return number ?  number += step : 'отсчет окончен';   
+//     }
+// }
+// const counter = createCouter();
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+//=================================================================\\
+
+// 6. Сделайте объект с тремя функциями, каждая из которых будет принимать 
+// параметром массив с числами. Сделайте так, чтобы первая функция возвращала 
+// сумму элементов массива, вторая функция - сумму квадратов, а третья - сумму кубов.
 
