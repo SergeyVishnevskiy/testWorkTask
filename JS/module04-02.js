@@ -165,36 +165,37 @@
 // параметром массив с числами. Сделайте так, чтобы первая функция возвращала
 // сумму элементов массива, вторая функция - сумму квадратов, а третья - сумму кубов.
 
-const object = {
-  pow(array, exp) {
-    let sum = 0;
-    for (const element of array) {
-      sum += Math.pow(element, exp);
-    }
-    return console.log(sum);
-  },
-  sum(array) {
-    this.pow(array, 1);
-    // let sum = 0;
-    // for (const element of array) {
-    //   sum += Math.pow(element, 1); }
-    // return console.log(sum)
-  },
-  square(array) {
-    this.pow(array, 2);
-    // let square = 0;
-    // for (const element of array) {
-    //   square += Math.pow(element, 2);}
-    // return console.log(square);
-  },
-  triple(array) {
-    this.pow(array, 3);
-    // let triple = 0;
-    // for (const element of array) {
-    //   triple += Math.pow(element, 3);}
-    // return console.log(triple);
-  },
-};
-object.sum([1, 2, 3, 4]);
-object.square([1, 5, 6]);
-object.triple([1, 5, 6]);
+// const object = {
+//   pow(array, exp) {
+//     let sum = 0;
+//     for (const element of array) {
+//       sum += Math.pow(element, exp);
+//     }
+//     return console.log(sum);
+//   },
+//   sum(array) {
+//     this.pow(array, 1);
+//     // let sum = 0;
+//     // for (const element of array) {
+//     //   sum += Math.pow(element, 1); }
+//     // return console.log(sum)
+//   },
+//   square(array) {
+//     this.pow(array, 2);
+//     // let square = 0;
+//     // for (const element of array) {
+//     //   square += Math.pow(element, 2);}
+//     // return console.log(square);
+//   },
+//   triple(array) {
+//     this.pow(array, 3);
+//     // let triple = 0;
+//     // for (const element of array) {
+//     //   triple += Math.pow(element, 3);}
+//     // return console.log(triple);
+//   },
+// };
+// object.sum([1, 2, 3, 4]);
+// object.square([1, 5, 6]);
+// object.triple([1, 5, 6]);
+//=================================================================\\
