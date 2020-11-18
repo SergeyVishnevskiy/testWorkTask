@@ -219,10 +219,31 @@ const cart = {
       quantity: 2,
     },
     {
-      id: 1,
+      id: 3,
       name: "Fresh juice",
       price: 40,
       quantity: 3,
     },
   ],
 };
+function cartCounter(quantity) {
+  return function (step = 1) {
+    return (quantity += step);
+  };
+}
+function findProductById(array, id) {
+  for (const product of array) {
+    if (product.id === id) return product;
+  }
+}
+function getValue(array, id) {
+  const products = findProductById(array, id);
+  const counter1 = cartCounter(products.quantity);
+  console.log(counter1());
+  console.log(counter1());
+  console.log(counter1());
+}
+
+// console.log(counter1());
+// console.log(findProductById(3));
+getValue(cart.products, 1);
