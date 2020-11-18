@@ -37,3 +37,27 @@
 //     ]
 // }
 // 8. В примере выше создайте методы, которые будут логировать данные всех продуктов массива.
+
+
+const cart = {
+    products: [
+        {
+            id: 1,
+            name: "Milk",
+            price: 20,
+            quantity: 1
+        },
+        {
+            id: 2,
+            name: "Juice",
+            price: 30,
+            quantity: 2
+        },
+        {
+            id: 1,
+            name: "Fresh juice",
+            price: 40,
+            quantity: 3
+        }
+    ]
+}
