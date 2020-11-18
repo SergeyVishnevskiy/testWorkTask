@@ -75,19 +75,35 @@
 //         }
 //     }
 // }
-function func (a) {   
-    return function (b) {
-        return function (c) {
-            return function (d) {
-                return function () {
-                    return [a, b, c, d];
-                }
-            }
-        }
-    }
-}
-const result = func(2)(3)(4)(5)();
-console.log(result);
+// function pusher (...parameter)  {
+//     // array.push(parameter)
+//     return parameter;
+// }
+
+// function func (a) {   
+//     // const arr = [];
+//     // pusher(arr, a)
+//     return function (b) {
+//         // pusher(arr, b)
+//         return function (c) {
+//             // pusher(arr, c)
+//             return function (d) {
+//                 // pusher(arr, d)
+//                 return function () {
+//                     return pusher(a,b,c,d,e);
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// console.log(pusher);
+// const result = func(2)(3)(4)(5)();
+// console.log(result);
 //=================================================================\\
+
+// 3. Реализуйте счетчик вызова функции, работающий на замыканиях. 
+
+
 
 
