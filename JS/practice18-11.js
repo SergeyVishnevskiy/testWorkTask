@@ -28,3 +28,49 @@
 // console.log(calculateOrderPrice(userOrder2, storagePrice));
 
 //============================================================\\
+
+const users = [
+  {
+    name: "Virgil",
+    age: "28",
+  },
+  {
+    name: "Trent",
+    age: "23",
+  },
+  {
+    name: "Jordan",
+    age: "25",
+  },
+  {
+    name: "Sadio",
+    age: "21",
+  },
+  {
+    name: "Joel",
+    age: "27",
+    status: "qwerty",
+  },
+];
+
+const setStatus = function (array, userName) {
+  let copyUsers = [...array];
+
+  for (let user of copyUsers) {
+    // console.log(user);
+    user.status = "player";
+    //   users[2].status = "capitan";
+    // user.name == "Jordan" ? (user.status = "capitan") : (user.status = "player");
+    if (user.name === userName) {
+      user.status = "capitan";
+    }
+  }
+  return copyUsers;
+};
+setStatus();
+console.log(setStatus(users, "Jordan"));
+
+// users[0].status = "capitan";
+// users[1].status = "centerDef";
+
+// console.table(users);
