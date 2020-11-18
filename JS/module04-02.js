@@ -42,19 +42,52 @@
 // 1. Сделайте функцию func, которая будучи вызвана вот так: func(2)(3)(4), 
 // вернет сумму переданных в параметры чисел.
 
-function func (a) {
-    console.log(a);
+// function func (a) {
+//     console.log(a);
+//     return function (b) {
+//         console.log(b);
+//         return function (c) {
+//             console.log(c);
+//             return a + b + c
+//         }
+//     }
+// }
+// const result = func(2)(3)(4);
+// console.log(result);
+//====================================================================\\
+
+// 2. Сделайте функцию func, которая будучи вызвана вот так: func(2)(3)(4)(5)(), 
+// вернет массив переданных в параметры чисел.
+
+// function func (a) {
+//     const arr = [];
+//     arr.push(a);
+//     return function (b) {
+//         arr.push(b);
+//         return function (c) {
+//             arr.push(c);
+//             return function (d) {
+//                 arr.push(d);
+//                 return function () {
+//                     return arr;
+//                 }
+//             }
+//         }
+//     }
+// }
+function func (a) {   
     return function (b) {
-        console.log(b);
         return function (c) {
-            console.log(c);
-            return a + b + c
+            return function (d) {
+                return function () {
+                    return [a, b, c, d];
+                }
+            }
         }
     }
 }
-const result = func(2)(3)(4);
+const result = func(2)(3)(4)(5)();
 console.log(result);
-//====================================================================\\
-
+//=================================================================\\
 
 
