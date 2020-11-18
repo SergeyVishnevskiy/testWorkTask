@@ -236,17 +236,24 @@
 //     if (product.id === id) return product;
 //   }
 // }
+// function logger(counter, product) {
+//   product.quantity = counter();
+//   product.quantity = console.group(`${product.name}: `);
+//   console.log(product.name);
+//   console.log(product.price);
+//   console.log(product.quantity);
+//   console.groupEnd();
+// }
 // function getValue(array, id) {
 //   const products = findProductById(array, id);
-//   const counter1 = cartCounter(products.quantity);
-//   console.log(counter1());
-//   console.log(counter1());
-//   console.log(counter1());
+//   const counter = cartCounter(products.quantity);
+//   logger(counter, product);
 // }
 
 // // console.log(counter1());
 // // console.log(findProductById(3));
-// getValue(cart.products, 1);
+// getValue(cart.products);
+
 //=================================================================\\
 
 // 8. В примере выше создайте методы, которые будут логировать данные всех продуктов массива.
