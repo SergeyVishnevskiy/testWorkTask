@@ -140,17 +140,26 @@
 
 //===============task3===================\\
 
-const letters = 'abcdefg';
-console.log(letters);
+// const letters = 'abcdefg';
+// console.log(letters);
 
-function reverseStr (string) {
-  let newString = '';
-  for (let letter of string) {
-    newString = letter + newString;
-  }
-  return newString;
-};
-console.log(reverseStr(letters));
+// const reverseStr = function (str) {
+//   let newString = '';
+//   for (let i in str) {
+//     // console.log(i);
+//     newString = str[i]+newString;
+//   }
+//   return newString;
+// }
+// console.log(reverseStr(letters));
+// function reverseStr (string) {
+//   let newString = '';
+//   for (let letter of string) {
+//     newString = letter + newString;
+//   }
+//   return newString;
+// };
+// console.log(reverseStr(letters));
 
 // function reverseStr(str) {
 // return str.split("").reverse().join("");
@@ -160,11 +169,12 @@ console.log(reverseStr(letters));
 // function reverseStr(str) {
 //  let newStr = '', i;
 //  for (i = str.length - 1; i >= 0; i--) {
-//  newStr += str.charAt(i);
+// //  newStr += str.charAt(i);
+//   newStr += str[i];
 //  }
 // return newStr;
 // }
-// console.log(reverseStr(letter));
+// console.log(reverseStr(letters));
 
 // let string = 10;
 // while (string >= 0) {
@@ -174,6 +184,10 @@ console.log(reverseStr(letters));
 // for (let i=10; i>=0; i-=1) {
 //  console.log(i);
 // }
+//=======================================\\
+
+//===============task4===================\\
+
 
 
 
