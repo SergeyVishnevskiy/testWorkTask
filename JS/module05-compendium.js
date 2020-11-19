@@ -45,4 +45,34 @@
 // console.log(searchLiteral(string));
 //=====================================\\
 
-//===============task1=================\\
+//===============task2=================\\
+
+const writeAlphabet = function () {
+  let indexSymbol = "a".charCodeAt();
+  let alphabet = "";
+  let vowels = '';
+  // console.log(indexSymbol);
+  // 97.101.105.111.117
+  for (let i = 0; i < 26; i += 1) {
+    alphabet += String.fromCharCode(indexSymbol);
+    indexSymbol += 1;
+  }
+
+  for (let j = 0; j < alphabet.length; j += 1) {
+    // console.table(alphabet[j], alphabet[j].charCodeAt());
+    if (alphabet[j].charCodeAt() === 97 ||
+      alphabet[j].charCodeAt() === 101 ||
+      alphabet[j].charCodeAt() === 105 ||
+      alphabet[j].charCodeAt() === 111 ||
+      alphabet[j].charCodeAt() === 117) {
+      vowels += String.fromCharCode(alphabet[j].charCodeAt());
+    }
+
+  }
+  console.log(vowels);
+  return alphabet;
+};
+
+console.log(writeAlphabet());
+//=====================================\\
+
