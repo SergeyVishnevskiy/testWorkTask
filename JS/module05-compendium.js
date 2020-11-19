@@ -188,7 +188,16 @@
 
 //===============task4===================\\
 
+// const arrayNum = [113, 21, 77, 227, 11];
+// const maxNumber = function (array) {
+//   // return Math.max.apply(Math, array)
+//   return Math.max.bind(Math, ...array)();
+// }
+// const num = maxNumber(arrayNum);
+// console.log(num);
+//=======================================\\
 
+//===============task5===================\\
 
 
 
