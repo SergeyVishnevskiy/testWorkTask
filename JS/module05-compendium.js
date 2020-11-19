@@ -199,26 +199,28 @@
 
 //===============task5===================\\
 
-const user = {
-  name: 'Jordan',
-  age: 20, 
-  showData (){
-    console.log(this.name, this.age);
-  },
-}
-user.showData();
+// const user = {
+//   name: 'Jordan',
+//   age: 20, 
+//   showData (){
+//     console.log(this.name, this.age);
+//   },
+// }
+// // user.showData();
 
-const cars = [
-  {name: 'bmw', age: 2,},
-  {name: 'audi', age: 4,},
-  {name: 'mini', age: 8,}
-]
-// console.log(cars);
+// const cars = [
+//   {name: 'bmw', age: 2,},
+//   {name: 'audi', age: 4,},
+//   {name: 'mini', age: 8,}
+// ]
+// // console.log(cars);
 
-for (let car of cars) {
-  // console.log(car);
-  console.log(car.name, car.age);
-}  
-
+// for (let car of cars) {
+//   // console.log(car);
+//   // console.log(car.name, car.age);
+//   // user.showData.call(car);
+//   user.showData.bind(car)();
+// }  
+//=======================================\\
 
 
